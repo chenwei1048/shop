@@ -3,8 +3,10 @@ package com.zheng.shop.dao;
 import com.zheng.shop.model.TbUser;
 import com.zheng.shop.model.TbUserExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface TbUserMapper {
     long countByExample(TbUserExample example);
 

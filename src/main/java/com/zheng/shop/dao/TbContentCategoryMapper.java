@@ -3,8 +3,10 @@ package com.zheng.shop.dao;
 import com.zheng.shop.model.TbContentCategory;
 import com.zheng.shop.model.TbContentCategoryExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface TbContentCategoryMapper {
     long countByExample(TbContentCategoryExample example);
 
