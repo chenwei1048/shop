@@ -8,8 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-//@ComponentScan
-//@MapperScan(basePackages = {"com.zheng.shop.dao"})
+@ServletComponentScan
 public class ShopApplication {
 
 	public static void main(String[] args) {
